@@ -1,0 +1,2 @@
+model,dataset,input_length,num_classes,num_params,val_loss,val_acc,train_time_sec
+baseline,MIT-BIH DS2 (inter-patient),200,5,446085,0.8489201045906704,0.8052976248656045,740.7081625461578

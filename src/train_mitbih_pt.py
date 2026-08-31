@@ -22,16 +22,21 @@ from models_pytorch import BaselineCNN
 # =============================================================================
 
 # Hard-coded project root
-#for google colab, project root is changed from  r"F:\ecg_thesis" to import os
-PROJECT_ROOT = os.getcwd()
-# PROJECT_ROOT = r"F:\ecg_thesis"
-import os
-PROJECT_ROOT = os.getcwd()
+# PROJECT_ROOT = one level above the src/ folder that contains this script,
+# regardless of current working directory or OS.
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.path.join(PROJECT_ROOT, "results")
 PLOTS_DIR = os.path.join(PROJECT_ROOT, "plots")
 
+CHECKPOINTS_DIR = os.path.join(PROJECT_ROOT, "checkpoints")
+
 os.makedirs(RESULTS_DIR, exist_ok=True)
 os.makedirs(PLOTS_DIR, exist_ok=True)
+os.makedirs(CHECKPOINTS_DIR, exist_ok=True)
+
+SEED = 42
+torch.manual_seed(SEED)
+np.random.seed(SEED)
 
 
 def count_parameters(model):
@@ -211,6 +216,18 @@ def main():
     print(classification_report(targets, preds))
 
     # 7. Save tables (CSV)
+    prefix = "mitbih_all_baseline"
+
+    pred_df = pd.DataFrame({
+        'index': np.arange(len(targets)),
+        'y_true': targets,
+        'y_pred': preds
+    })
+    pred_csv = os.path.join(RESULTS_DIR, f"{prefix}_predictions.csv")
+    pred_df.to_csv(pred_csv, index=False)
+
+    torch.save(model.state_dict(), os.path.join(CHECKPOINTS_DIR, f"{prefix}.pt"))
+
     history_df = pd.DataFrame({
         'epoch': np.arange(1, num_epochs + 1),
         'train_loss': train_losses,

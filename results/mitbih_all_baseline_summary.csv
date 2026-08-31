@@ -1,2 +1,2 @@
 model,dataset,input_length,num_classes,num_params,val_loss,val_acc,train_time_sec
-BaselineCNN,MIT-BIH all records,200,5,462405,0.05828829168982845,0.9879641144075324,1524.723881483078
+BaselineCNN,MIT-BIH all records,200,5,446085,0.05019443840460829,0.9895185645763013,1328.5530107021332

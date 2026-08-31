@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" style="background-color: #FFFFFF; font-family: 'Georgia', serif;">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <text x="400.0" y="45" font-size="16" font-weight="bold" fill="#2F5496" text-anchor="middle">MIT-BIH Arrhythmia Overall Model Accuracies with 95% Wilson CIs</text>
+  <line x1="100" y1="520.0" x2="650" y2="520.0" stroke="#E5E8E8" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="85" y="524.0" font-size="11" fill="#5D6D7E" text-anchor="end">95.0%</text>
+  <line x1="100" y1="432.0" x2="650" y2="432.0" stroke="#E5E8E8" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="85" y="436.0" font-size="11" fill="#5D6D7E" text-anchor="end">96.0%</text>
+  <line x1="100" y1="344.0" x2="650" y2="344.0" stroke="#E5E8E8" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="85" y="348.0" font-size="11" fill="#5D6D7E" text-anchor="end">97.0%</text>
+  <line x1="100" y1="256.0" x2="650" y2="256.0" stroke="#E5E8E8" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="85" y="260.0" font-size="11" fill="#5D6D7E" text-anchor="end">98.0%</text>
+  <line x1="100" y1="168.0" x2="650" y2="168.0" stroke="#E5E8E8" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="85" y="172.0" font-size="11" fill="#5D6D7E" text-anchor="end">99.0%</text>
+  <line x1="100" y1="80.0" x2="650" y2="80.0" stroke="#E5E8E8" stroke-width="1" stroke-dasharray="4 4" />
+  <text x="85" y="84.0" font-size="11" fill="#5D6D7E" text-anchor="end">100.0%</text>
+  <text x="35" y="300.0" font-size="12" font-weight="bold" fill="#2A2F2D" text-anchor="middle" transform="rotate(-90, 35, 300.0)">Overall Validation Accuracy</text>
+  <line x1="100" y1="520.0" x2="650" y2="520.0" stroke="#5D6D7E" stroke-width="1.5" />
+  <line x1="100.0" y1="174.09476682035594" x2="100.0" y2="199.20381185772283" stroke="#2F5496" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="88.0" y1="174.09476682035594" x2="112.0" y2="174.09476682035594" stroke="#2F5496" stroke-width="1.5" />
+  <line x1="88.0" y1="199.20381185772283" x2="112.0" y2="199.20381185772283" stroke="#2F5496" stroke-width="1.5" />
+  <circle cx="100.0" cy="185.9168000000003" r="6" fill="#2F5496" stroke="#FFFFFF" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="115.0" y="189.9168000000003" font-size="11" font-weight="bold" fill="#2A2F2D" text-anchor="start">98.80%</text>
+  <text x="100.0" y="550" font-size="11" font-weight="bold" fill="#2A2F2D" text-anchor="middle">BaselineCNN</text>
+  <line x1="283.33333333333337" y1="167.11023141922539" x2="283.33333333333337" y2="191.33648113841082" stroke="#4472C4" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="271.33333333333337" y1="167.11023141922539" x2="295.33333333333337" y2="167.11023141922539" stroke="#4472C4" stroke-width="1.5" />
+  <line x1="271.33333333333337" y1="191.33648113841082" x2="295.33333333333337" y2="191.33648113841082" stroke="#4472C4" stroke-width="1.5" />
+  <circle cx="283.33333333333337" cy="178.4895999999997" r="6" fill="#4472C4" stroke="#FFFFFF" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="298.33333333333337" y="182.4895999999997" font-size="11" font-weight="bold" fill="#2A2F2D" text-anchor="start">98.88%</text>
+  <text x="283.33333333333337" y="550" font-size="11" font-weight="bold" fill="#2A2F2D" text-anchor="middle">ResCNN</text>
+  <line x1="466.6666666666667" y1="362.2559423111687" x2="466.6666666666667" y2="404.1595666165418" stroke="#A6A6A6" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="454.6666666666667" y1="362.2559423111687" x2="478.6666666666667" y2="362.2559423111687" stroke="#A6A6A6" stroke-width="1.5" />
+  <line x1="454.6666666666667" y1="404.1595666165418" x2="478.6666666666667" y2="404.1595666165418" stroke="#A6A6A6" stroke-width="1.5" />
+  <circle cx="466.6666666666667" cy="382.5087999999994" r="6" fill="#A6A6A6" stroke="#FFFFFF" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="481.6666666666667" y="386.5087999999994" font-size="11" font-weight="bold" fill="#2A2F2D" text-anchor="start">96.56%</text>
+  <text x="466.6666666666667" y="550" font-size="11" font-weight="bold" fill="#2A2F2D" text-anchor="middle">LiteECGCNN</text>
+  <line x1="650.0" y1="336.58500683015467" x2="650.0" y2="376.6699718252138" stroke="#2E75B6" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="638.0" y1="336.58500683015467" x2="662.0" y2="336.58500683015467" stroke="#2E75B6" stroke-width="1.5" />
+  <line x1="638.0" y1="376.6699718252138" x2="662.0" y2="376.6699718252138" stroke="#2E75B6" stroke-width="1.5" />
+  <circle cx="650.0" cy="355.9239999999999" r="6" fill="#2E75B6" stroke="#FFFFFF" stroke-width="1.5" filter="url(#shadow)" />
+  <text x="665.0" y="359.9239999999999" font-size="11" font-weight="bold" fill="#2A2F2D" text-anchor="start">96.86%</text>
+  <text x="650.0" y="550" font-size="11" font-weight="bold" fill="#2A2F2D" text-anchor="middle">LiteECGDSCNN</text>
+  <line x1="100" y1="80" x2="100" y2="520" stroke="#5D6D7E" stroke-width="1.5" />
+</svg>

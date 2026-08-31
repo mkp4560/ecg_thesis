@@ -1,0 +1,2 @@
+models,statistic,p_value,df,significant_at_0.05
+"BaselineCNN, LiteECGCNN, LiteECGDSCNN, ResCNN",3035.0083570280626,0.0,3,True

@@ -1,0 +1,2 @@
+model,dataset,input_length,num_classes,num_params,val_loss,val_acc,train_time_sec
+rescnn,MIT-BIH DS2 (inter-patient),200,5,581541,0.5867112717856942,0.8801485680774118,4053.3639998435974
