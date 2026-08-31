@@ -1,0 +1,2 @@
+model,dataset,input_length,num_classes,num_params,val_loss,val_acc,train_time_sec
+LiteECGCNN,MIT-BIH all records,200,5,9477,0.11649713097949248,0.9656244448392255,1377.3080768585205

@@ -1,0 +1,2 @@
+model,dataset,input_length,num_classes,num_params,val_loss,val_acc,train_time_sec
+ResCNN,MIT-BIH all records,200,5,581541,0.058078309422139485,0.988807958784864,2808.5532739162445
